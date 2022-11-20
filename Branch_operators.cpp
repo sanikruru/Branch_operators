@@ -1,7 +1,12 @@
+//Пользователь вводит три числа. Найдите среднее арифметическое этих чисел (для выполнения функции данного задания задайте переменной "check" значение 1), а
+//также разность удвоенной суммы первого и третьего чисел и утроенного второго
+//числа.
+
 #include <iostream>
 
 int main(){
-    int n1,n2,n3;
+    int n1,n2,n3, check;
+        std :: cin >> check;
         std :: cin >> n1;
         std :: cin >> n2;
         std :: cin >> n3;
@@ -13,9 +18,9 @@ int main(){
         }else{
             std::cout <<"success" << "/n";
         }
-        if (n1>1){
-            int failure=0;
-            failure=(n1+n2+n3)/3;
-                    std::cout <<"failure";
+        if (check=1){
+            int task2=0;
+            task2=(n1+n2+n3)/3;
+                    std::cout << task2;
         }
 }
